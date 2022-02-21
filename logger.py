@@ -1,3 +1,10 @@
+# logger.py
+# Interpreter: Python v3.9
+#
+# This script is intended to log all incoming udp packages on a given port. This is intended to be used to capture all
+# messages sent from a Solis Data Logger LAN Stick to a target machine.
+
+
 if __name__ == '__main__':
     import socket
     import binascii
@@ -5,7 +12,8 @@ if __name__ == '__main__':
 
     # What addresses to listen on (0.0.0.0 means all addresses)
     listen_address = '0.0.0.0'
-    # Port to listen on
+    # Port to listen on.
+    # This is taken from the 'Manual' section of the configuration website.
     listen_port = 5432
 
     # configure the socket to listen on.

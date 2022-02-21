@@ -40,4 +40,6 @@ if __name__ == '__main__':
         except socket.timeout:
             # handle the socket timeout by displaying a message and then
             # return to processing messages.
+            # This may be due to solar panels not generating electricity
+            # as it is dark, which powers down the data logger.
             print("Socket timeout ignored")
